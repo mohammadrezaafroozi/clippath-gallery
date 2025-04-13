@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="./css/fontello.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            width: 600px;
+            height: 600px;
+            position: relative;
+            margin: 100px auto;
+            /* border: 2px solid red; */
+            scale: 1.6;
+         
+
+            >div {
+                width: 200px;
+                height: 200px;
+                position: absolute;
+                border: 2px solid black;
+                /* background-color: blue; */
+                clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+                background-image: url(./img/images.jfif);
+                background-size: 300px 500px;
+               object-fit: cover;
+                /* background-repeat: no-repeat; */
+                &:hover{
+                    &::after{
+                        opacity: 0;
+                    }
+                }
+                &::after{
+                    content: 'click!';
+                    justify-content: center;
+                    align-items: center;
+                    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                    font-size: 30px;
+                    color: gray;
+                    display: flex;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.575);
+                    transition: 1s;
+                }
+
+                &:nth-of-type(1) {
+                    top: 95px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background-position: -69px 34px;
+                }
+
+                &:nth-of-type(2) {
+                    top: 50%;
+                    left: 95px;
+                    transform: translateY(-50%);
+                    background-position: 34px -72px;
+                }
+
+                &:nth-of-type(3) {
+                    top: 50%;
+                    right: 95px;
+                    transform: translateY(-50%);
+                    background-position: -175px -80px;
+                }
+
+                &:nth-of-type(4) {
+                    bottom: 95px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background-position: -66px -180px;
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+
+    <figure class="footer">
+        <a href="https://github.com/mohammadrezaafroozi" target="_blank">
+            <i class="icon-github-circled-alt2"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/mohammad-reza-afroozi-65886b349/" target="_blank">
+            <i class=" icon-linkedin-squared"></i>
+        </a>
+        <a href="https://www.instagram.com/afroozi_dev?igsh=MWNvODk2dGwwY29o" target="_blank">
+            <i class=" icon-instagram"></i>
+        </a>
+        <img src="./img/myphoto.jpg" alt="">
+        <figcaption>Mohammad Afroozi</figcaption>
+    </figure>
+    
+
+</body>
+
+</html>
