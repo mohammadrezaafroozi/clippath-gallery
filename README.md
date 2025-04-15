@@ -1,6 +1,6 @@
 # clippath-gallery
 
-[https://mohammadrezaafroozi.github.io/clippath-gallery/)
+[demo project](https://mohammadrezaafroozi.github.io/clippath-gallery/)
 
 
 - Developed by MohammadReza Afroozi
